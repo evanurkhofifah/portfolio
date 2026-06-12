@@ -1,0 +1,573 @@
+[
+    {
+    "title": "PLTSa Sentiment Analysis",
+    "subtitle": "Aspect-Based Sentiment Analysis on Indonesian Twitter Discourse",
+    "category": "Research",
+    "stack": [
+      "Python",
+      "NLP",
+      "Transformers",
+      "mDeBERTa-v3",
+      "Playwright",
+      "Twitter API Scraping"
+    ],
+    "demo": "",
+    "preview": "/img/p-pltsa.png",
+    "desc": {
+      "overview": "Analyzing public sentiment toward Waste-to-Energy (PLTSa) initiatives in Indonesia using zero-shot Aspect-Based Sentiment Analysis on Twitter discourse from January 2025 to May 2026.",
+      "problem": "PLTSa projects involve a complex balance between environmental benefits and potential risks, such as air pollution, public health issues, and policy transparency. Traditional sentiment analysis only shows general positive or negative opinions and cannot reveal detailed views across different aspects like the environment, policy, health, and economics.",
+      "approach": [
+        {
+          "icon": "fa-solid fa-spider",
+          "title": "Data Collection",
+          "text": "Tweets collected via Playwright based scraping by monitoring XHR requests from Twitter's SearchTimeline endpoint using keywords: PLTSa, incinerator, PSEL, waste-to-energy."
+        },
+        {
+          "icon": "fa-solid fa-brain",
+          "title": "Zero-Shot ABSA",
+          "text": "Applied mDeBERTa-v3-base-mnli-xnli for aspect and sentiment classification without task-specific training data."
+        },
+        {
+          "icon": "fa-solid fa-tags",
+          "title": "Aspect Classification",
+          "text": "Sentiment classified across six aspects: environment & pollution, government policy, energy & electricity, public health, economics & cost, and social acceptance."
+        }
+      ],
+      "result": [
+        "75% accuracy for aspect classification, 80% for sentiment (n=102)",
+        "Environmental concerns (42.8%) and government policy (31.2%) dominate discourse",
+        "Nearly polarized sentiment: 49.7% negative vs 47.3% positive",
+        "Public health shows highest negative ratio (72.7%)",
+        "Sentiment shifts correlate with major policy announcements"
+      ]
+    },
+    "images": [
+      "/img/projects/r-pltsa1.png",
+      "/img/projects/r-pltsa2.png",
+      "/img/projects/r-pltsaa.png"
+    ],
+    "featured": 0
+  },
+  {
+    "title": "Education Disparity Research",
+    "subtitle": "Clustering of Junior High School Education in West Java",
+    "category": "Research",
+    "stack": [
+      "Python",
+      "Pandas",
+      "Scikit-learn",
+      "KMeans",
+      "GeoPandas"
+    ],
+    "demo": "https://doi.org/10.34123/icdsos.v2025i1.662",
+    "preview": "/img/p-education.png",
+    "desc": {
+      "overview": "Analyzing regional disparities in junior high school education across West Java Province using 2024 data from the Indonesian Ministry of Education (Kemendikdasmen), combining statistical and machine learning approaches.",
+      "problem": "Inequality in education across regions has many aspects, including the number of schools, teacher availability, and dropout rates. Using only one indicator is not enough to fully understand educational inequality.",
+      "approach": [
+        {
+          "icon": "fa-solid fa-chart-bar",
+          "title": "Quartile Analysis",
+          "text": "Describes distribution of individual indicators: student-school ratio, student-teacher ratio, and dropout rate."
+        },
+        {
+          "icon": "fa-solid fa-circle-nodes",
+          "title": "K-Means Clustering",
+          "text": "Identifies latent regional patterns using StandardScaler normalization and multiple initializations for stability."
+        },
+        {
+          "icon": "fa-solid fa-map",
+          "title": "Geographic Visualization",
+          "text": "District-level mapping using GeoPandas and Folium based on GeoJSON boundaries."
+        }
+      ],
+      "result": [
+        "3 regional clusters identified: Balanced & Stable, High-Density Stable, and Elevated Dropout Risk",
+        "Clustering provides more holistic insights than single-variable analysis",
+        "Elevated dropout risk mostly concentrated in rural areas",
+        "Findings suggest need for differentiated education policies per cluster"
+      ],
+      "map": "data/Education Map.html"
+    },
+    "images": [
+      "/img/projects/r-icdsos.png",
+      "/img/projects/r-proceedings.png",
+      "/img/projects/c-icdsos.jpg"
+    ],
+    "featured": -1
+  },
+  {
+    "title": "LLM-Based Smart Recruitment System",
+    "subtitle": "LLM-based multi-source candidate evaluation",
+    "category": "Research",
+    "stack": ["Python", "LLM (LLaMA-3)", "OpenRouter/Groq API", "Selenium", "Playwright", "NLP", "XLM-RoBERTa"],
+    "demo": "",
+    "preview": "/img/p-llm.png",
+    "desc": {
+      "overview": "This research proposes and evaluates a multi-source AI-driven recruitment system.",
+      "problem": "Traditional recruitment processes depend a lot on resumes provided by candidates and on personal judgment from recruiters.",
+      "approach": [
+        {
+          "icon": "fa-solid fa-file-lines",
+          "title": "Resume Analysis",
+          "text": "Parsed and analyzed using LLaMA-3 70B via OpenRouter API with zero-shot, few-shot, and chain-of-thought prompting."
+        },
+        {
+          "icon": "fa-brands fa-linkedin",
+          "title": "LinkedIn Integration",
+          "text": "Extracted using Selenium to evaluate profile consistency with resumes."
+        },
+        {
+          "icon": "fa-brands fa-twitter",
+          "title": "Twitter Analysis",
+          "text": "Scraped using Playwright, analyzed with XLM-RoBERTa for sentiment and behavioral indicators."
+        }
+      ],
+      "result": [
+        "Cross-platform consistency checks",
+        "Behavioral insight extraction",
+        "Automated candidate summarization",
+        "Scalable across different job domains"
+      ]
+    },
+    "images": [
+      "/img/projects/r-llm-flowchart.png",
+      "/img/projects/r-llm-result.png",
+      "/img/projects/r-llm-osnem.jpg"
+    ],
+    "featured": -1
+  },
+  {
+    "title": "Data Science Trainee Projects",
+    "subtitle": "West Java Education Disparity Analysis and Clustering",
+    "category": "Projects",
+    "stack": [
+      "Python",
+      "KMeans",
+      "Scikit-learn",
+      "Looker Studio",
+      "Streamlit"
+    ],
+    "demo": "",
+    "preview": "/img/p-online.png",
+    "desc": {
+      "overview": "A two-stage Data Science Trainee project that includes an early dashboard to monitor student dropout risk and a final analysis that uses clustering to study regional education patterns across West Java Province based on 2024 Ministry of Education data.",
+      "problem": "Education inequality in West Java varies across dropout rates, school density, and teacher availability. Effective analysis requires both descriptive monitoring tools and deeper analytical models to understand regional patterns.",
+      "approach": [
+        {
+          "icon": "fa-solid fa-gauge",
+          "title": "Looker Studio Dashboard",
+          "text": "A mid-stage output that monitors student dropout patterns across regions and education levels, helping to quickly identify areas with higher risk."
+        },
+        {
+          "icon": "fa-solid fa-circle-nodes",
+          "title": "K-Means Clustering App",
+          "text": "Final project built with Python and Streamlit. Users can select feature combinations, adjust cluster numbers manually or via elbow method, and explore regional groupings interactively."
+        }
+      ],
+      "result": [
+        "Dashboard provides visibility into dropout distributions across West Java",
+        "3 regional clusters: Balanced & Stable, High-Density Stable, Elevated Dropout Risk",
+        "Interactive clustering app supports dynamic exploration",
+        "Both tools provide complementary descriptive and predictive perspectives"
+      ]
+    },
+    "images": [
+      "/img/projects/p-dashboard-dropout.png",
+      "/img/projects/p-dashboard-clustering.png",
+      "/img/projects/doc-dst-i.jpg",
+      "/img/projects/doc-dst-ii.jpg"
+    ],
+    "featured": -1
+  },
+  {
+    "title": "Undergraduate Thesis",
+    "subtitle": "Sentiment Analysis of Indonesian Super Priority Destinations Using Big Data Platforms on Data Streaming",
+    "category": "Research",
+    "stack": ["Python", "Playwright", "Apache Kafka", "Apache Spark", "Dash by Plotly", "Dictionary-Based NLP"],
+    "demo": "https://evanurkhofifah.github.io/TourDashboard/",
+    "preview": "/img/p-thesis.png",
+      "desc": {
+      "overview": "Undergraduate thesis developing a real-time sentiment analysis system for Indonesia's five Super Priority Destinations (Lake Toba, Borobudur, Mandalika, Labuan Bajo, Likupang) using Twitter data and big data streaming platforms.",
+      "problem": "Tracking public sentiment toward tourist destinations in real time is difficult because social media data is very large and fast moving. Traditional batch processing methods cannot keep up with quickly changing opinions, and limits from the Twitter API require alternative approaches for simulating and streaming data.",
+      "approach": [
+        {
+          "icon": "fa-solid fa-spider",
+          "title": "Data Collection",
+          "text": "Tweets collected using Playwright and tweet-harvest with destination based keywords. Due to API rate limits, data was simulated as a streaming source."
+        },
+        {
+          "icon": "fa-solid fa-stream",
+          "title": "Kafka Streaming",
+          "text": "Collected tweets streamed second-by-second via Apache Kafka, simulating real-time ingestion into the processing pipeline."
+        },
+        {
+          "icon": "fa-solid fa-brain",
+          "title": "Spark NLP Processing",
+          "text": "Apache Spark handles all NLP and sentiment analysis using a dictionary-based model. Labeled results are published back to Kafka on a separate topic and sent to the Dash by Plotly."
+        },
+        {
+          "icon": "fa-solid fa-chart-line",
+          "title": "Real-Time Dashboard",
+          "text": "Dash by Plotly visualizes sentiment distribution, destination frequency, topic combinations, sentiment trends over time, and keyword analysis."
+        }
+      ],
+      "result": [
+        "61.8% neutral, 27.6% positive, 10.6% negative sentiment overall",
+        "80% of tweets assessed as tourism-relevant by expert judgment",
+        "Borobudur and Mandalika most discussed; Likupang least known",
+        "Real-time trends visualized at 1s, 10s, and 60s intervals"
+      ]
+    },
+    "images": [
+      "/img/projects/r-dsp.png",
+      "/img/projects/r-dsp-realtime.gif",
+      "/img/projects/hki_EC002024234683.jpg"
+    ],
+    "featured": -1
+  },
+  {
+    "title": "Competency Level Classifier",
+    "subtitle": "Fine-Tuned FLAN-T5 for Psychometric Competency Assessment",
+    "category": "Projects",
+    "stack": ["Python", "FLAN-T5", "Hugging Face Transformers", "Fine-Tuning"],
+    "demo": "",
+    "preview": "/img/p-assessment.png",
+    "desc": {
+      "overview": "A fine-tuned FLAN-T5 model developed in collaboration with a psychology department to automatically classify competency levels (1-4) from psychometric assessment responses. Focused on delivering a working end-to-end pipeline as a working solution, serving as the model component of a larger assessment system.",
+      "problem": "Scoring psychometric assessment responses manually can take a lot of time and may lead to inconsistent results. An automated model that classifies competency levels from psychometric assessment responses, reducing manual work and improving evaluation consistency",
+      "approach": [
+        {
+          "icon": "fa-solid fa-database",
+          "title": "Data Preparation",
+          "text": "Training data consists of two columns: responses (open-ended psychometric answers with dimension context merged in) and competency level labels (1-4). Labels converted to text format to match FLAN-T5's seq2seq architecture."
+        },
+        {
+          "icon": "fa-solid fa-brain",
+          "title": "Fine-Tuning FLAN-T5",
+          "text": "FLAN-T5 fine-tuned on the psychometric dataset to learn the mapping between response text and competency level as a text generation task."
+        },
+        {
+          "icon": "fa-solid fa-people-group",
+          "title": "Collaborative Development",
+          "text": "Built in collaboration with a psychology program from another institution. The model was later integrated into a web-based assessment system developed by a separate team."
+        }
+      ],
+      "result": [
+        "End-to-end pipeline successfully delivered, from data preprocessing to model inference",
+        "Overall accuracy: 46%; Weighted F1: 0.46 (initial baseline, not the primary focus)",
+        "Best performance on Level 1 --> Precision: 64%, Recall: 61%, F1: 0.63",
+        "Level 4 underperformed due to limited training samples (n=10)",
+        "Model successfully integrated as backend component for the web assessment system"
+      ]
+    },
+    "images": [
+      "/img/projects/r-ps-dataset.png",
+      "/img/projects/r-ps-training.png",
+      "/img/projects/r-ps-evaluation.png"
+    ],
+    "featured": -1
+  },
+  {
+    "title": "RAG Document Analysis",
+    "subtitle": "Document Analysis for Indonesian Banking Surveillance Report 2024",
+    "category": "Projects",
+    "stack": ["Python", "RAG", "sentence-transformers", "Qdrant", "Groq", "LLaMA-3.2-90B", "Gradio"],
+    "demo": "https://evanurkhofifah.github.io/document-analysis-using-LLM/",
+    "preview": "/img/p-document.png",
+    "desc": {
+      "overview": "A RAG-based document analysis system for extracting insights from Indonesia's Banking Surveillance Report Q3 2024, combined with an interactive chatbot for question-answering against the document.",
+      "problem": "Large financial reports are hard to review manually. To get useful insights quickly, an intelligent system is needed that can understand the document context and answer specific questions accurately.",
+      "approach": [
+        {
+          "icon": "fa-solid fa-file-lines",
+          "title": "Document Vectorization",
+          "text": "Document text converted into vector representations using sentence-transformers (all-MiniLM-L6-v2) for fast and effective semantic search."
+        },
+        {
+          "icon": "fa-solid fa-magnifying-glass",
+          "title": "Vector Search with Qdrant",
+          "text": "Qdrant client performs vector-based retrieval, ensuring only the most relevant document sections are surfaced for analysis."
+        },
+        {
+          "icon": "fa-solid fa-robot",
+          "title": "Chatbot via Groq + LLaMA",
+          "text": "Interactive chatbot powered by LLaMA-3.2-90B via Groq API, deployed with a Gradio interface for user-friendly question answering based on the report."
+        }
+      ],
+      "result": [
+        "Fast retrieval of relevant sections from large financial documents",
+        "Interactive Q&A Gradio interface for the Banking Surveillance Report Q3 2024",
+        "Combined RAG + vector search enables accurate and context-aware responses",
+        "Accelerates understanding of Indonesia's banking sector conditions"
+      ]
+    },
+    "images": [
+      "/img/projects/p-rag-i.png",
+      "/img/projects/p-rag-ii.png"
+    ],
+    "featured": -1
+  },
+  {
+    "title": "Mutual Fund Analyzer",
+    "subtitle": "AI-Powered Fund Fact Sheet Analysis with Risk Profile Personalization",
+    "category": "Projects",
+    "stack": ["Python", "Streamlit", "Gemini 2.0 Flash", "Gemini API", "RAG"],
+    "demo": "",
+    "preview": "/img/p-chatbot.png",
+    "desc": {
+      "overview": "An AI-powered chatbot for analyzing mutual fund fact sheets, personalized based on the user's selected risk profile. Built with Streamlit and powered by Gemini 2.0 Flash for document understanding and Q&A.",
+      "problem": "Mutual fund fact sheets contain dense financial information that is difficult to interpret for most investors. Understanding whether a fund aligns with one's risk tolerance requires financial literacy that not everyone has, making personalized AI-assisted analysis valuable.",
+      "approach": [
+        {
+          "icon": "fa-solid fa-sliders",
+          "title": "Risk Profile Selection",
+          "text": "Users select their investment risk profile (Conservative, Moderate, or Aggressive) via dropdown before starting the session, personalizing the analysis context."
+        },
+        {
+          "icon": "fa-solid fa-file-arrow-up",
+          "title": "Document Upload",
+          "text": "Users upload a fund fact sheet PDF which is passed as context to the AI model for document-grounded analysis."
+        },
+        {
+          "icon": "fa-solid fa-robot",
+          "title": "Gemini 2.0 Flash Q&A",
+          "text": "Gemini 2.0 Flash processes the uploaded document and risk profile as context, enabling personalized Q&A about the fund's suitability, performance, and composition."
+        }
+      ],
+      "result": [
+        "Personalized fund analysis based on Conservative, Moderate, or Aggressive risk profiles",
+        "Document-grounded Q&A, answers based strictly on uploaded fact sheet",
+        "Interactive chat UI built with Streamlit for seamless user experience",
+        "Supports analysis of any mutual fund fact sheet uploaded by the user"
+      ]
+    },
+    "images": [
+      "/img/projects/p-chatbot-ffs-up.png",
+      "/img/projects/p-chatbot-ffs.png"
+    ],
+    "featured": -1
+  },
+  {
+    "title": "Return Shipment Prediction",
+    "subtitle": "E-Commerce Product Return Prediction Using Machine Learning",
+    "category": "Projects",
+    "stack": ["Python", "XGBoost", "Random Forest", "Decision Tree", "Naive Bayes", "Scikit-learn", "Pandas"],
+    "demo": "https://evanurkhofifah.github.io/data-mining-cup-2014/",
+    "preview": "/img/p-dmc.png",
+    "desc": {
+      "overview": "A machine learning project that predicts the likelihood of product returns in online retail using the Data Mining Cup 2014 dataset. The goal is to help retailers reduce return rates and gain a competitive advantage.",
+      "problem": "Product returns are a major cost in online retail, accounting for around half of all orders. Predicting return likelihood using historical purchase and shipping data allows businesses to take action before returns happen.",
+      "approach": [
+        {
+          "icon": "fa-solid fa-broom",
+          "title": "Preprocessing & EDA",
+          "text": "Data cleaning, handling missing values, feature engineering, and exploratory analysis on purchase and shipping attributes."
+        },
+        {
+          "icon": "fa-solid fa-flask",
+          "title": "Model Training",
+          "text": "Four algorithms compared: Naive Bayes, Decision Tree, Random Forest, and XGBoost. Focus metric is Recall to minimize missed return predictions."
+        },
+        {
+          "icon": "fa-solid fa-check-double",
+          "title": "Evaluation & Cross Validation",
+          "text": "Models evaluated on Accuracy, Precision, Recall, and F1. 5-fold cross validation applied to assess generalization."
+        },
+        {
+          "icon": "fa-solid fa-wand-magic-sparkles",
+          "title": "Final Prediction",
+          "text": "Best model (XGBoost) used to predict return probability on new unlabeled purchase data."
+        }
+      ],
+      "result": [
+        "XGBoost best performer --> Recall: 63.8%, Accuracy: 62.1%, F1: 61.8%",
+        "Random Forest runner-up --> Recall: 61.9%, F1: 59.3%",
+        "Naive Bayes lowest Recall (46.2%), least suitable for this use case",
+        "5-fold cross validation mean accuracy: 48.4% (±4.2%), indicates generalization challenge on unseen data",
+        "XGBoost selected as final model for unlabeled data prediction"
+      ]
+    },
+    "images": [],
+    "featured": -1
+  },
+  {
+    "title": "ICDSOS 2025",
+    "subtitle": "Proceedings of The International Conference on Data Science and Official Statistics",
+    "category": "Certifications",
+    "stack": [],
+    "demo": "",
+    "preview": "/img/projects/c-icdsos.jpg",
+    "desc": {
+      "issuer": "Politeknik Statistika STIS (ICDSOS Committee)",
+      "date": "27-28 November 2025",
+      "embed": "https://drive.google.com/file/d/1pem43s37_wpCTfcxsXUfjgXsUZ-uTzV4/preview",
+      "topics": [
+        "Presented: Clustering of Junior High School Education in West Java Based on Density and Dropout Ratios Using Quartile and KMeans Methods",
+        "Conference: The 3rd International Conference on Data Science and Official Statistics, 2025",
+        "Topic: Data Science"
+      ]
+    },
+    "images": [],
+    "featured": -1
+  },
+  {
+    "title": "LLM-Based Tools Gemini API",
+    "subtitle": "LLM-Based Tools Gemini API Integration for Data Scientist",
+    "category": "Certifications",
+    "stack": [],
+    "demo": "",
+    "preview": "/img/projects/c-hacktiv8.jpg",
+    "desc": {
+      "issuer": "Maju Bareng AI",
+      "date": "11-23 November 2025",
+      "embed": "https://drive.google.com/file/d/1NOoW4I9IK4O8eT-41c8ScCX9PKJip84g/preview",
+      "topics": [
+        "Large Language Models (LLMs)",
+        "Prompt Engineering and Function Calling",
+        "Gemini API",
+        "Mini Project Chatbot Development"
+      ]
+    },
+    "images": [],
+    "featured": -1
+  },
+  {
+    "title": "Data Science Trainee Batch 1",
+    "subtitle": "Data Science Trainee at Pusdatin Kemendikdasmen",
+    "category": "Certifications",
+    "stack": [],
+    "demo": "",
+    "preview": "/img/projects/c-dst_batch1.jpg",
+    "desc": {
+      "issuer": "Pusdatin Kemendikdasmen",
+      "date": "May - July 2025",
+      "embed": "https://drive.google.com/file/d/1R9p1xoaqar5Bu-aCuQtDqp2jOYi2WqwB/preview",
+      "topics": [
+        "Applications of Data Science at Google and Microsoft",
+        "Management of Education Statistics in Indonesia",
+        "Education policy in Indonesia",
+        "Data Privacy",
+        "Data Mining",
+        "Data-driven decision making",
+        "Data visualization and recommendation systems"
+      ]
+    },
+    "images": [],
+    "featured": -1
+  },
+  {
+    "title": "The Fundamental of LLM",
+    "subtitle": "The Fundamentals of Large Language Model",
+    "category": "Certifications",
+    "stack": [],
+    "demo": "",
+    "preview": "/img/projects/c-llm.png",
+    "desc": {
+      "issuer": "Digistar Club X Dunia Coding",
+      "date": "25-27 January 2025",
+      "embed": "https://drive.google.com/file/d/1zZ40o13O88ip_7azPVc-KPNgVQsta7ze/preview",
+      "topics": [
+        "Fundamentals of Large Language Model",
+        "Transformers",
+        "Tokenizer, Encoding, Decoding",
+        "Prompt Techniques and Fine-Tuning",
+        "Hyperparameter Tuning Methods",
+        "Mini Project Chatbot Development"
+      ]
+    },
+    "images": [],
+    "featured": -1
+  },
+  {
+    "title": "Dicoding - Machine Learning for Beginners",
+    "subtitle": "Learning Machine Learning for Beginners",
+    "category": "Certifications",
+    "stack": [],
+    "demo": "https://www.dicoding.com/certificates/4EXGVWRLQXRL",
+    "preview": "/img/projects/c-dicoding.png",
+    "desc": {
+      "issuer": "Dicoding",
+      "date": "23 June 2025",
+      "embed": "https://drive.google.com/file/d/16JNAikvYaFnrbp8aMGlMLMmhuCnKj5AM/preview",
+      "topics": [
+        "Machine Learning Workflow",
+        "Supervised Learning: Classification and Regresion",
+        "Unsupervised Learning: Clustering",
+        "Feature Engineering",
+        "Overfitting and Underfitting",
+        "Model Optimization using Hyperparameter Tuning",
+        "Final Submission: Supervised and Unsupervised Learning Models for Tabular Data"
+      ]
+    },
+    "images": [],
+    "featured": -1
+  },
+  {
+    "title": "DQLab - Customer Churn Prediction",
+    "subtitle": "Customer Churn Prediction using Machine Learning",
+    "category": "Certifications",
+    "stack": [],
+    "demo": "https://academy.dqlab.id/Certificate_check/result/DQLABAPL2APPGDP",
+    "preview": "/img/projects/c-dqlab.png",
+    "desc": {
+      "issuer": "DQLab",
+      "date": "17 February 2025",
+      "embed": "https://drive.google.com/file/d/1x2LeUEeCMsIFPa-7uZLUkgYEUQCdt6xR/preview",
+      "topics": [
+        "Exploratory Data Analysis (EDA)",
+        "Data PreProcessing",
+        "Modelling: Logistic Regression",
+        "Modelling : Random Forest Classifier",
+        "Modelling: Gradient Boosting Classifier",
+        "Machine Learning Model Selection"
+      ]
+    },
+    "images": [],
+    "featured": -1
+  },
+  {
+    "title": "HKI - TourDashboard",
+    "subtitle": "TourDashboard: Dashboard Analysis Sentimen Destinasi Super Prioritas",
+    "category": "Certifications",
+    "type": "hki",
+    "stack": [],
+    "demo": "",
+    "preview": "/img/projects/hki_EC002024234683.jpg",
+    "desc": {
+      "issuer": "Direktorat Jenderal Kekayaan Intelektual",
+      "date": "November 2024",
+      "embed": "https://drive.google.com/file/d/19H-KB5emQFzr049ZIkngceHLFN--AHzs/preview",
+      "registration": "EC002024234683",
+      "topics": [
+        "Real-time sentiment analysis using Apache Kafka & Spark",
+        "Interactive dashboard built with Dash by Plotly",
+        "Big data streaming pipeline for Twitter data"
+      ]
+    },
+    "images": [],
+    "featured": -1
+  },
+  {
+    "title": "HKI - Document Generator",
+    "subtitle": "Google Document List Generator",
+    "category": "Certifications",
+    "type": "hki",
+    "stack": [],
+    "demo": "",
+    "preview": "/img/projects/hki_EC00202252852.jpg",
+    "desc": {
+      "issuer": "Direktorat Jenderal Kekayaan Intelektual",
+      "date": "August 2022",
+      "embed":"https://drive.google.com/file/d/1Ixzqt2BtH-CnV6mEOGmrsRInk4xVCrki/preview",
+      "registration": "EC00202252852",
+      "topics": [
+        "File and folder listing",
+        "Hierarchical Folder Structure Retrieval",
+        "Batch Google Docs to PDF Conversion"
+      ]
+    },
+    "images": [],
+    "featured": -1
+  }
+]

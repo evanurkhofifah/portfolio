@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Eva Nurkhofifah</title>
+  <meta name="description" content="Portfolio of Eva Nurkhofifah — Computer Science graduate specializing in data science, NLP, and research. Explore my projects, research papers, and certifications in machine learning and data analysis." />
+  <meta name="author" content="Eva Nurkhofifah">
+  <meta name="robots" content="noindex, nofollow">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Eva Nurkhofifah — Portfolio">
+  <meta property="og:description" content="Computer Science graduate specializing in data science, NLP, and research.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link href="img/eva.ico" rel="icon" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Niconne&family=Cookie&family=Italianno&family=Parisienne&family=Playfair+Display:wght@700&family=Quicksand:wght@400;500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script>history.scrollRestoration = "manual";</script>
+</head>
+
+<body>
+
+<!-- INTRO START-->
+<div class="intro" id="intro">
+  <div class="intro-logo">
+    <img src="img/intro.png" alt="logo">
+  </div>
+</div>
+<!-- INTRO END-->
+
+<!-- NAV START-->
+<header class="nav">
+  <!-- Logo -->
+  <a href="#" class="logo">
+    <span>Eva Nurkhofifah</span>
+  </a>
+
+  <!-- Button Menu -->
+  <button class="hamburger" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- Menu -->
+  <nav>
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+<!-- NAV END -->
+
+<!-- HERO START-->
+<section class="hero">
+  <div class="hero-bg"></div>
+
+  <div class="hero-content">
+    <div class="profile">
+      <img src="img/profile.png" alt="profile"/>
+    </div>
+
+    <h1 class="reveal">Aspiring Data Scientist</h1>
+    <p class="reveal">Computer Science Graduate and Researcher — exploring machine learning, NLP, and data-driven research.</p>
+  </div>
+</section>
+<!-- HERO END -->
+
+<!-- WORK START-->
+<section id="work" class="section card-section work reveal">
+  <h2 class="title reveal">Featured Work</h2>
+
+  <div class="filter reveal">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="Research">Research</button>
+    <button class="filter-btn" data-filter="Projects">Projects</button>
+    <button class="filter-btn" data-filter="Certifications">Certifications</button>
+  </div>
+
+  <div class="grid" id="grid">
+    <!-- Cards di-generate oleh JavaScript -->
+  </div>
+</section>
+<!-- WORK END -->
+
+<!-- ABOUT START-->
+<section id="about" class="section card-section about reveal">
+  <div class="inner">
+    <h2 class="title reveal">About</h2>
+    <p class="text reveal">
+      I am a Computer Science graduate with a focus on data science, natural language processing, and research. 
+      I enjoy working with data, from building machine learning models and fine-tuning language models to analyzing patterns in text and structured datasets. 
+      My work spans academic research, collaborative projects, and independent explorations across various domains.
+    </p>
+
+    <div class="about-cta reveal">
+      <a href="https://wa.me/087816974090" class="cta-btn" target="_blank">
+        <i class="fa fa-handshake"></i> Hire Me
+      </a>
+      <a href="https://drive.google.com/uc?export=download&id=123456789" class="cta-btn cta-outline" download="My_Resume.pdf">
+        <i class="fa fa-download"></i> Resume
+      </a>
+    </div>
+  </div>
+</section>
+<!-- ABOUT END -->
+
+<!-- CONTACT START-->
+<section id="contact" class="section card-section contact reveal">
+  <div class="inner">
+    <h2 class="title reveal">Contact</h2>
+    <p class="text reveal">Let's work together, feel free to reach out!</p>
+
+    <div class="contact-info reveal">
+      <a href="mailto:evaanurkhofifah@gmail.com" class="contact-item">
+        <i class="fa fa-envelope"></i>
+        evaanurkhofifah@gmail.com
+      </a>
+      <a href="https://wa.me/087816974090" class="contact-item" target="_blank">
+        <i class="fa fa-phone"></i>
+        +62-8781-6974-090
+      </a>
+    </div>
+
+    <div class="contact-social reveal">
+      <a href="https://x.com/envaaa_" target="_blank" class="social-btn" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://github.com/evanurkhofifah" target="_blank" class="social-btn" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- CONTACT END -->
+
+
+<!-- FOOTER START-->
+<footer>
+  &copy; 2026 Eva Nurkhofifah. All rights reserved.
+</footer>
+<!-- FOOTER END -->
+
+<!-- MODAL START-->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1 id="modalTitle"></h1>
+    <div id="modalDesc" class="case-study"></div>
+    <div class="masonry" id="gallery"></div>
+    <div id="modal-stack" class="modal-stack"></div>
+    <div class="modal-links">
+      <a id="demo-link" target="_blank" aria-label="Link Project">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- MODAL END -->
+
+<!-- Back to Top -->
+<a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+<div class="noise"></div>
+
+<!-- LIGHTBOX START-->
+<div class="lightbox" id="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+</div>
+<!-- LIGHTBOX END-->
+ 
+<script src="js/script.js"></script>
+</body>
+</html>
