@@ -12,7 +12,7 @@
       "Twitter API Scraping"
     ],
     "demo": "",
-    "preview": "/img/p-pltsa.png",
+    "preview": "img/p-pltsa.png",
     "desc": {
       "overview": "Analyzing public sentiment toward Waste-to-Energy (PLTSa) initiatives in Indonesia using zero-shot Aspect-Based Sentiment Analysis on Twitter discourse from January 2025 to May 2026.",
       "problem": "PLTSa projects involve a complex balance between environmental benefits and potential risks, such as air pollution, public health issues, and policy transparency. Traditional sentiment analysis only shows general positive or negative opinions and cannot reveal detailed views across different aspects like the environment, policy, health, and economics.",
@@ -42,9 +42,9 @@
       ]
     },
     "images": [
-      "/img/projects/r-pltsa1.png",
-      "/img/projects/r-pltsa2.png",
-      "/img/projects/r-pltsaa.png"
+      "img/projects/r-pltsa1.png",
+      "img/projects/r-pltsa2.png",
+      "img/projects/r-pltsaa.png"
     ],
     "featured": 0
   },
@@ -60,7 +60,7 @@
       "GeoPandas"
     ],
     "demo": "https://doi.org/10.34123/icdsos.v2025i1.662",
-    "preview": "/img/p-education.png",
+    "preview": "img/p-education.png",
     "desc": {
       "overview": "Analyzing regional disparities in junior high school education across West Java Province using 2024 data from the Indonesian Ministry of Education (Kemendikdasmen), combining statistical and machine learning approaches.",
       "problem": "Inequality in education across regions has many aspects, including the number of schools, teacher availability, and dropout rates. Using only one indicator is not enough to fully understand educational inequality.",
@@ -90,9 +90,9 @@
       "map": "data/Education Map.html"
     },
     "images": [
-      "/img/projects/r-icdsos.png",
-      "/img/projects/r-proceedings.png",
-      "/img/projects/c-icdsos.jpg"
+      "img/projects/r-icdsos.png",
+      "img/projects/r-proceedings.png",
+      "img/projects/c-icdsos.jpg"
     ],
     "featured": -1
   },
@@ -102,7 +102,7 @@
     "category": "Research",
     "stack": ["Python", "LLM (LLaMA-3)", "OpenRouter/Groq API", "Selenium", "Playwright", "NLP", "XLM-RoBERTa"],
     "demo": "",
-    "preview": "/img/p-llm.png",
+    "preview": "img/p-llm.png",
     "desc": {
       "overview": "This research proposes and evaluates a multi-source AI-driven recruitment system.",
       "problem": "Traditional recruitment processes depend a lot on resumes provided by candidates and on personal judgment from recruiters.",
@@ -131,9 +131,9 @@
       ]
     },
     "images": [
-      "/img/projects/r-llm-flowchart.png",
-      "/img/projects/r-llm-result.png",
-      "/img/projects/r-llm-osnem.jpg"
+      "img/projects/r-llm-flowchart.png",
+      "img/projects/r-llm-result.png",
+      "img/projects/r-llm-osnem.jpg"
     ],
     "featured": -1
   },
@@ -149,7 +149,7 @@
       "Streamlit"
     ],
     "demo": "",
-    "preview": "/img/p-online.png",
+    "preview": "img/p-online.png",
     "desc": {
       "overview": "A two-stage Data Science Trainee project that includes an early dashboard to monitor student dropout risk and a final analysis that uses clustering to study regional education patterns across West Java Province based on 2024 Ministry of Education data.",
       "problem": "Education inequality in West Java varies across dropout rates, school density, and teacher availability. Effective analysis requires both descriptive monitoring tools and deeper analytical models to understand regional patterns.",
@@ -173,10 +173,10 @@
       ]
     },
     "images": [
-      "/img/projects/p-dashboard-dropout.png",
-      "/img/projects/p-dashboard-clustering.png",
-      "/img/projects/doc-dst-i.jpg",
-      "/img/projects/doc-dst-ii.jpg"
+      "img/projects/p-dashboard-dropout.png",
+      "img/projects/p-dashboard-clustering.png",
+      "img/projects/doc-dst-i.jpg",
+      "img/projects/doc-dst-ii.jpg"
     ],
     "featured": -1
   },
@@ -186,7 +186,7 @@
     "category": "Research",
     "stack": ["Python", "Playwright", "Apache Kafka", "Apache Spark", "Dash by Plotly", "Dictionary-Based NLP"],
     "demo": "https://evanurkhofifah.github.io/TourDashboard/",
-    "preview": "/img/p-thesis.png",
+    "preview": "img/p-thesis.png",
       "desc": {
       "overview": "Undergraduate thesis developing a real-time sentiment analysis system for Indonesia's five Super Priority Destinations (Lake Toba, Borobudur, Mandalika, Labuan Bajo, Likupang) using Twitter data and big data streaming platforms.",
       "problem": "Tracking public sentiment toward tourist destinations in real time is difficult because social media data is very large and fast moving. Traditional batch processing methods cannot keep up with quickly changing opinions, and limits from the Twitter API require alternative approaches for simulating and streaming data.",
@@ -220,9 +220,9 @@
       ]
     },
     "images": [
-      "/img/projects/r-dsp.png",
-      "/img/projects/r-dsp-realtime.gif",
-      "/img/projects/hki_EC002024234683.jpg"
+      "img/projects/r-dsp.png",
+      "img/projects/r-dsp-realtime.gif",
+      "img/projects/hki_EC002024234683.jpg"
     ],
     "featured": -1
   },
@@ -232,7 +232,7 @@
     "category": "Projects",
     "stack": ["Python", "FLAN-T5", "Hugging Face Transformers", "Fine-Tuning"],
     "demo": "",
-    "preview": "/img/p-assessment.png",
+    "preview": "img/p-assessment.png",
     "desc": {
       "overview": "A fine-tuned FLAN-T5 model developed in collaboration with a psychology department to automatically classify competency levels (1-4) from psychometric assessment responses. Focused on delivering a working end-to-end pipeline as a working solution, serving as the model component of a larger assessment system.",
       "problem": "Scoring psychometric assessment responses manually can take a lot of time and may lead to inconsistent results. An automated model that classifies competency levels from psychometric assessment responses, reducing manual work and improving evaluation consistency",
@@ -262,9 +262,9 @@
       ]
     },
     "images": [
-      "/img/projects/r-ps-dataset.png",
-      "/img/projects/r-ps-training.png",
-      "/img/projects/r-ps-evaluation.png"
+      "img/projects/r-ps-dataset.png",
+      "img/projects/r-ps-training.png",
+      "img/projects/r-ps-evaluation.png"
     ],
     "featured": -1
   },
@@ -274,7 +274,7 @@
     "category": "Projects",
     "stack": ["Python", "RAG", "sentence-transformers", "Qdrant", "Groq", "LLaMA-3.2-90B", "Gradio"],
     "demo": "https://evanurkhofifah.github.io/document-analysis-using-LLM/",
-    "preview": "/img/p-document.png",
+    "preview": "img/p-document.png",
     "desc": {
       "overview": "A RAG-based document analysis system for extracting insights from Indonesia's Banking Surveillance Report Q3 2024, combined with an interactive chatbot for question-answering against the document.",
       "problem": "Large financial reports are hard to review manually. To get useful insights quickly, an intelligent system is needed that can understand the document context and answer specific questions accurately.",
@@ -303,8 +303,8 @@
       ]
     },
     "images": [
-      "/img/projects/p-rag-i.png",
-      "/img/projects/p-rag-ii.png"
+      "img/projects/p-rag-i.png",
+      "img/projects/p-rag-ii.png"
     ],
     "featured": -1
   },
@@ -314,7 +314,7 @@
     "category": "Projects",
     "stack": ["Python", "Streamlit", "Gemini 2.0 Flash", "Gemini API", "RAG"],
     "demo": "",
-    "preview": "/img/p-chatbot.png",
+    "preview": "img/p-chatbot.png",
     "desc": {
       "overview": "An AI-powered chatbot for analyzing mutual fund fact sheets, personalized based on the user's selected risk profile. Built with Streamlit and powered by Gemini 2.0 Flash for document understanding and Q&A.",
       "problem": "Mutual fund fact sheets contain dense financial information that is difficult to interpret for most investors. Understanding whether a fund aligns with one's risk tolerance requires financial literacy that not everyone has, making personalized AI-assisted analysis valuable.",
@@ -343,8 +343,8 @@
       ]
     },
     "images": [
-      "/img/projects/p-chatbot-ffs-up.png",
-      "/img/projects/p-chatbot-ffs.png"
+      "img/projects/p-chatbot-ffs-up.png",
+      "img/projects/p-chatbot-ffs.png"
     ],
     "featured": -1
   },
@@ -354,7 +354,7 @@
     "category": "Projects",
     "stack": ["Python", "XGBoost", "Random Forest", "Decision Tree", "Naive Bayes", "Scikit-learn", "Pandas"],
     "demo": "https://evanurkhofifah.github.io/data-mining-cup-2014/",
-    "preview": "/img/p-dmc.png",
+    "preview": "img/p-dmc.png",
     "desc": {
       "overview": "A machine learning project that predicts the likelihood of product returns in online retail using the Data Mining Cup 2014 dataset. The goal is to help retailers reduce return rates and gain a competitive advantage.",
       "problem": "Product returns are a major cost in online retail, accounting for around half of all orders. Predicting return likelihood using historical purchase and shipping data allows businesses to take action before returns happen.",
@@ -397,7 +397,7 @@
     "category": "Certifications",
     "stack": [],
     "demo": "",
-    "preview": "/img/projects/c-icdsos.jpg",
+    "preview": "img/projects/c-icdsos.jpg",
     "desc": {
       "issuer": "Politeknik Statistika STIS (ICDSOS Committee)",
       "date": "27-28 November 2025",
@@ -417,7 +417,7 @@
     "category": "Certifications",
     "stack": [],
     "demo": "",
-    "preview": "/img/projects/c-hacktiv8.jpg",
+    "preview": "img/projects/c-hacktiv8.jpg",
     "desc": {
       "issuer": "Maju Bareng AI",
       "date": "11-23 November 2025",
@@ -438,7 +438,7 @@
     "category": "Certifications",
     "stack": [],
     "demo": "",
-    "preview": "/img/projects/c-dst_batch1.jpg",
+    "preview": "img/projects/c-dst_batch1.jpg",
     "desc": {
       "issuer": "Pusdatin Kemendikdasmen",
       "date": "May - July 2025",
@@ -462,7 +462,7 @@
     "category": "Certifications",
     "stack": [],
     "demo": "",
-    "preview": "/img/projects/c-llm.png",
+    "preview": "img/projects/c-llm.png",
     "desc": {
       "issuer": "Digistar Club X Dunia Coding",
       "date": "25-27 January 2025",
@@ -485,7 +485,7 @@
     "category": "Certifications",
     "stack": [],
     "demo": "https://www.dicoding.com/certificates/4EXGVWRLQXRL",
-    "preview": "/img/projects/c-dicoding.png",
+    "preview": "img/projects/c-dicoding.png",
     "desc": {
       "issuer": "Dicoding",
       "date": "23 June 2025",
@@ -509,7 +509,7 @@
     "category": "Certifications",
     "stack": [],
     "demo": "https://academy.dqlab.id/Certificate_check/result/DQLABAPL2APPGDP",
-    "preview": "/img/projects/c-dqlab.png",
+    "preview": "img/projects/c-dqlab.png",
     "desc": {
       "issuer": "DQLab",
       "date": "17 February 2025",
@@ -533,7 +533,7 @@
     "type": "hki",
     "stack": [],
     "demo": "",
-    "preview": "/img/projects/hki_EC002024234683.jpg",
+    "preview": "img/projects/hki_EC002024234683.jpg",
     "desc": {
       "issuer": "Direktorat Jenderal Kekayaan Intelektual",
       "date": "November 2024",
@@ -555,7 +555,7 @@
     "type": "hki",
     "stack": [],
     "demo": "",
-    "preview": "/img/projects/hki_EC00202252852.jpg",
+    "preview": "img/projects/hki_EC00202252852.jpg",
     "desc": {
       "issuer": "Direktorat Jenderal Kekayaan Intelektual",
       "date": "August 2022",
