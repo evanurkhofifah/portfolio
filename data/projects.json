@@ -220,10 +220,10 @@
       ]
     },
     "images": [
-      "img/projects/r-dsp.png",
-      "img/projects/r-dsp-realtime.gif",
-      "img/projects/hki_EC002024234683.jpg"
+      "img/projects/r-dsp-i.png",
+      "img/projects/r-dsp-ii.png"
     ],
+    "video": "https://www.youtube.com/embed/RR1-YKr1R7Y",
     "featured": -1
   },
   {

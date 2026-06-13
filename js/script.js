@@ -74,10 +74,10 @@ async function loadProjects() {
     card.dataset.subtitle = project.subtitle || project.title;
     card.dataset.stack = project.stack.join(",");
     card.dataset.demo = project.demo;
-    card.dataset.desc = buildDesc(project.desc, project.map || "");
+    card.dataset.desc = buildDesc(project.desc, project.map || "", project.video || "");
 
     // DESC STRUCTURE
-    function buildDesc(desc) {
+    function buildDesc(desc, map = "", video = "") {
       let html = "";
 
       // CERTIFICATION LAYOUT
@@ -201,6 +201,16 @@ async function loadProjects() {
           <div class="desc-label">Interactive Map</div>
           <div class="desc-map">
             <iframe src="${desc.map}" width="100%" height="450px" frameborder="0" loading="lazy"></iframe>
+          </div>
+        </div>`;
+      }
+
+      if (video) {
+        html += `
+        <div class="desc-block">
+          <div class="desc-label">Demo</div>
+          <div class="desc-map">
+            <iframe src="${video}" width="100%" height="400px" frameborder="0" allowfullscreen loading="lazy"></iframe>
           </div>
         </div>`;
       }
